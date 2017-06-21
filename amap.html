@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Make the application on mobile take up the full browser screen and disable user scaling. -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-    <title>WEBGLÈıÎ¬µØÇò_¸ßµÂµØÍ¼</title>
+    <title>WEBGLä¸‰ç»´åœ°çƒ_é«˜å¾·åœ°å›¾</title>
     <script src="./Cesium/Cesium.js"></script>
     <style>
         @import url(./Cesium/Widgets/widgets.css);
@@ -52,18 +52,18 @@
     scene.screenSpaceCameraController.maximumZoomDistance = 3e7;
 	
 	var ptDes, ptDir, ptUp;
-	//¢ÙChina
+	//â‘ China
 	//ptDes = new Cesium.Cartesian3.fromDegrees(102, 29, 20000000);
-	//¢ÚOrlando
+	//â‘¡Orlando
 	//ptDes = new Cesium.Cartesian3.fromDegrees(-81.3783, 28.5425, 2500);
-	//¢ÛNewYork
+	//â‘¢NewYork
 	//ptDes = new Cesium.Cartesian3.fromDegrees(-74, 40.7, 20000);
-	//¢ÜChangshaxian
+	//â‘£Changshaxian
 	ptDes = new Cesium.Cartesian3.fromDegrees(113.08, 28.25, 20000);
 	
-	//×óÓÒ·½ÏòË³Ê±ÕëĞı×ª½Ç¶È
+	//å·¦å³æ–¹å‘é¡ºæ—¶é’ˆæ—‹è½¬è§’åº¦
 	ptHead = Cesium.Math.toRadians(0);
-	//Ç°ºó·½ÏòĞı×ª½Ç¶È
+	//å‰åæ–¹å‘æ—‹è½¬è§’åº¦
 	ptPitch = Cesium.Math.toRadians(-90);
 	
 	viewer.camera.flyTo({
@@ -76,12 +76,12 @@
     });
 	
 	var tileset = new Cesium.Cesium3DTileset({
-		//¢ÚOrlando
+		//â‘¡Orlando
 		url : 'https://d3h9zulrmcj1j6.cloudfront.net/Orlando_Cesium/root.json',
 		//url: './Orlando_Cesium',
-		//¢ÛNewWork
+		//â‘¢NewWork
 		//url: 'https://cesiumjs.org/NewYork/3DTilesGml',
-		//¢ÜChangshaxian
+		//â‘£Changshaxian
 		//url: '../csx_osgb/root',
 		maximumScreenSpaceError: 2,
 		maximumNumberOfLoadedTiles: 1000
